@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://blog-7wt.pages.dev/"
 theme = "hugo-ficurinia"
 title = "Adams Writesup and References"
 languageCode = "en"
