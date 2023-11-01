@@ -1,6 +1,6 @@
 baseURL = "https://blog.adamgreer.org/"
 theme = "hugo-ficurinia"
-title = "Adams Writesup and References"
+title = "Adams Writeups and References"
 languageCode = "en"
 defaultContentLanguage = "en"
 relativeURLs = true
