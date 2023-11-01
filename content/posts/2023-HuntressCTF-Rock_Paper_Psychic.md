@@ -18,11 +18,11 @@ Wanna play a game of rock, paper, scissors against a computer that can read your
 
 ### Steps
 
-I downloaded the executible to my Flare Windows VM and executed it.  I was presented with a game of rock, paper, scissors. 
+I downloaded the executable to my Flare Windows VM and executed it.  I was presented with a game of rock, paper, scissors. 
 
 ![](/2023-HuntressCTF/rpp1.png)
 
-Unfortuntally, reverse enginnering is not something i'm very skilled at and this challenge took me a while to figure out exactly what was going on.  To start the RE process, I figured up Ghidra and loaded the file.  I let Ghidra auto analyze the file and I started to look through the Imports, Exports and functions.   I discovered the ```playerWins__main_10``` function. 
+Unfortunately, reverse engineering is not something i'm very skilled at and this challenge took me a while to figure out exactly what was going on.  To start the RE process, I figured up Ghidra and loaded the file.  I let Ghidra auto analyze the file and I started to look through the Imports, Exports and functions.   I discovered the ```playerWins__main_10``` function. 
 
 ![](/2023-HuntressCTF/rpp2.png)
 

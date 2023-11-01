@@ -15,7 +15,7 @@ We found all this data in the dumpster! Can you find anything interesting in her
 
 ### Steps
 
-I downloaded the file to my system and executed ```tar -xf dumpster_fire.tar.xz``` to extract the files.  Looking at the extracted files it appears to be a copy of a linux file system.  Based on the challenge description, we are looking for passwords.  My inital idea to go look at the dotfiles on the system and see if there was any stored passwords there.  After navigating to ```./home/challenge/```, I found ```.mozilla``` which I wasn't expecting.  Changing routes, I continued to investgate the .mozzila files and disovered a logins.json file. 
+I downloaded the file to my system and executed ```tar -xf dumpster_fire.tar.xz``` to extract the files.  Looking at the extracted files it appears to be a copy of a linux file system.  Based on the challenge description, we are looking for passwords.  My initial idea to go look at the dotfiles on the system and see if there was any stored passwords there.  After navigating to ```./home/challenge/```, I found ```.mozilla``` which I wasn't expecting.  Changing routes, I continued to investigate the .mozzila files and discovered a logins.json file. 
 
 ```bash
 ~/huntress/dumpsterfire/home/challenge/.mozilla/firefox/bc1m1zlr.default-release » jq . logins.json                                                                                                                                                                                                               kali@kali
@@ -45,7 +45,7 @@ I downloaded the file to my system and executed ```tar -xf dumpster_fire.tar.xz`
 }                                                                                           
 ```
 
-Researching more about how Mozilla encrypts stored credentials, I discoverd a great blog by [apr4h](https://apr4h.github.io/2019-12-20-Harvesting-Browser-Credentials/) discussing a high level overview of the process for protecting these credentails.  Additionally, within this blog there was mention of a tool developed by [lclevy](https://github.com/lclevy/firepwd).  I decided to download the tool and point it at the direcotry where keys4.db was stored using
+Researching more about how Mozilla encrypts stored credentials, I discoverd a great blog by [apr4h](https://apr4h.github.io/2019-12-20-Harvesting-Browser-Credentials/) discussing a high level overview of the process for protecting these credentials.  Additionally, within this blog there was mention of a tool developed by [lclevy](https://github.com/lclevy/firepwd).  I decided to download the tool and point it at the directory where keys4.db was stored using
 ```python
 python firepwd.py -d /home/kali/huntress/dumpsterfire/home/challenge/.mozilla/firefox/bc1m1zlr.default-release/ 
 ```
@@ -107,7 +107,7 @@ decrypting login/password pairs
 http://localhost:31337:b'flag',b'flag{35446041dc161cf5c9c325a3d28af3e3}'
 ```
 
-Near the bottom, I see the decrypted usernme and password which is the flag for the challenege.
+Near the bottom, I see the decrypted username and password which is the flag for the challenge.
 
 ```flag{35446041dc161cf5c9c325a3d28af3e3}```
 

@@ -21,7 +21,7 @@ I started the challenge docker instance and navigated to the url.  I'm presented
 
 ![](/2023-HuntressCTF/ezbakeoven.png)
 
-When clicking on the cook function a POST request is sent for the corrosponding recipe and the timer starts on the oven. 
+When clicking on the cook function a POST request is sent for the corresponding recipe and the timer starts on the oven. 
 
 ![](/2023-HuntressCTF/muffins.png)
 
@@ -33,7 +33,7 @@ Looking at the ```Magic Cookies```, I see it will take 7200 minutes to bake.  Us
 
 ![](/2023-HuntressCTF/burp1.png)
 
-I copied the Cookie value over to decoder and changed the daate from 10/16/2023 to 10/6/2023 and encoded the new value as base64.
+I copied the Cookie value over to decoder and changed the date from 10/16/2023 to 10/6/2023 and encoded the new value as base64.
 
 ![](/2023-HuntressCTF/timechange.png)
 

@@ -23,7 +23,7 @@ After downloading ```traffic.7z``` to my Kali instance, I extracted the archive 
 
 ![](/2023-HuntressCTF/zeeklogs.png)
 
-I was already familiar with these logs from my time working with Bro in the past.  Based on the challenge description they already hinted at network traffic and observing a sketcy site. So I knew to go directly to the dns logs. 
+I was already familiar with these logs from my time working with Bro in the past.  Based on the challenge description they already hinted at network traffic and observing a sketchy site. So I knew to go directly to the dns logs. 
 
 I extracted the dns*.log.gz files using ```gunzip -d dns.*```.  Next, I used ```cat dns.*.log``` to start to get an idea what traffic was observed.  These five dns log files had ```17134``` lines. Instead of following the advice of description and installing zeek and or rita, I decided to grep my way through the results. 
 

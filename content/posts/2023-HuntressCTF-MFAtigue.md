@@ -59,7 +59,7 @@ I started up the docker instance and attempted to login with the newly discovere
 
 ![](/2023-HuntressCTF/mfa2.png)
 
-I confirmed the credentials work as I was presented with a `Send Push Notification`.  Based on the challenge title `MFAtigue`, I decided to spam the Send Push Notificaiton button, hoping the user would be annoyed and approve one of the requests. 
+I confirmed the credentials work as I was presented with a `Send Push Notification`.  Based on the challenge title `MFAtigue`, I decided to spam the Send Push Notification button, hoping the user would be annoyed and approve one of the requests. 
 
 After a few attempts, I was presented with the flag: `flag{9b896a677de35d7dfa715a05c25ef89e}`
 

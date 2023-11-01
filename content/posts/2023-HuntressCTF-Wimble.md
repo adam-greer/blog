@@ -18,7 +18,7 @@ Author: @JohnHammond
 
 ### Steps
 
-I downloaded wimble.7z to my Kali VM and executed `7za e wimble.7z`.  I was presented with a file called fetch.  I executed `file fetch` and was given this result: ```fetch: Windows imaging (WIM) image v1.13, XPRESS compressed, reparse point fixup```.  I researched mounting .wim files on Linux and found `wimmount` from `wimtools` will mount the fetch file.  I created a new folder called `./mount` and ran this command the mount the file: `wimmount fetch ./mount`.  Next, I looked in the ./mount/ direcotry and discovered 276 .pf files.  
+I downloaded wimble.7z to my Kali VM and executed `7za e wimble.7z`.  I was presented with a file called fetch.  I executed `file fetch` and was given this result: ```fetch: Windows imaging (WIM) image v1.13, XPRESS compressed, reparse point fixup```.  I researched mounting .wim files on Linux and found `wimmount` from `wimtools` will mount the fetch file.  I created a new folder called `./mount` and ran this command the mount the file: `wimmount fetch ./mount`.  Next, I looked in the ./mount/ directory and discovered 276 .pf files.  
 
 At this point, I decoded to move to Windows and see if I can use [Eric Zimmerman's PECmd Tool](https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip).  Since I already mounted the files on Linux, I decided to copy and paste the .pf files over to Windows. 
 

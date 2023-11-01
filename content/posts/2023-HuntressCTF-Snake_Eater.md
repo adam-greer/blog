@@ -18,7 +18,7 @@ Hey Analyst, I've never seen an executable icon that looks like this. I don't li
 
 ### Steps
 
-I started up my Windows 11 VM  with Flare installed.  I began by disabling my network connectivity, USB controller, and shared files and folders.  Once the VM was ready, I executed the binary and didnt see any repsonse or indication on the OS.  
+I started up my Windows 11 VM  with Flare installed.  I began by disabling my network connectivity, USB controller, and shared files and folders.  Once the VM was ready, I executed the binary and didn't see any response or indication on the OS.  
 ![](/2023-HuntressCTF/se1.png)
 
 Before starting IDA, I wanted to try a few things. I tried to see if there was a help menu and to my surpise there was.
@@ -29,15 +29,15 @@ Using the information provided to me, I executed the binary with the ```-v``` fl
 
 ![](/2023-HuntressCTF/se3.png)
 
-I worked on this for a big longer but after a period of time I didnt get anywhere.  This time I decided to use ProcMon to see what was happening on the OS.  I know ProcMon is going to generate alot of information, so I decided to create an Include filter to only dislay events by snake_eater.exe. 
+I worked on this for a big longer but after a period of time I didn't get anywhere.  This time I decided to use ProcMon to see what was happening on the OS.  I know ProcMon is going to generate alot of information, so I decided to create an Include filter to only display events by snake_eater.exe. 
 
 ![](/2023-HuntressCTF/se4.png)
 
-I navigated back to cmd prompt and executed snake_eater.exe contuning to use --verbose mode.
+I navigated back to cmd prompt and executed snake_eater.exe continuing to use --verbose mode.
 
 ![](/2023-HuntressCTF/se5.png)
 
-I stopped capturing after events stopping reporting in the application.  Before going line-by-line, I wanted to get an overview of what was happening with an easier glance by looking at all the file events, network events, and registry events.  In ProcMon, I went to Tools -> File Summary... and to my suprise, the application was writing out the flag within the ApPData Roaming folder!
+I stopped capturing after events stopping reporting in the application.  Before going line-by-line, I wanted to get an overview of what was happening with an easier glance by looking at all the file events, network events, and registry events.  In ProcMon, I went to Tools -> File Summary... and to my surprise, the application was writing out the flag within the ApPData Roaming folder!
 
 Flag: ```flag{d1343a2fc5d8427801dd1fd417f12628}```
 

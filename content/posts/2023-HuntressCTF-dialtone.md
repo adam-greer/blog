@@ -17,7 +17,7 @@ Well would you listen to those notes, that must be some long phone number or som
 
 ### Steps
 
-In this challenge I was given a file called ```dialtone.wav```.  Listening, I hear the audible dial pad when dialing a phone number.  After some research, I discoverd a github respository by [ribt](https://github.com/ribt/dtmf-decoder) that will convert a .wav file dial press and corrolate this with the actual number being dialed. I executed ```./dtmf.py ~/huntress/dialtone.wav``` and received the below response. 
+In this challenge I was given a file called ```dialtone.wav```.  Listening, I hear the audible dial pad when dialing a phone number.  After some research, I discoverd a github respository by [ribt](https://github.com/ribt/dtmf-decoder) that will convert a .wav file dial press and correlate this with the actual number being dialed. I executed ```./dtmf.py ~/huntress/dialtone.wav``` and received the below response. 
 ```
 13040004482820197714705083053746380382743933853520408575731743622366387462228661894777288573
 ```

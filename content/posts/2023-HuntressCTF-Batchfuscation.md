@@ -18,7 +18,7 @@ I was reading a report on past Trickbot malware, and I found this sample that lo
 ### Steps
 
 
-The the start of this code was heavly obfuscated and after getting an understanding of what was happening I started to manually deobfuscate the code.  Looking at the code it looks like multiple variables tired together.
+The the start of this code was heavily obfuscated and after getting an understanding of what was happening I started to manually deobfuscate the code.  Looking at the code it looks like multiple variables tired together.
 ```bash
 @echo off
 set bdevq=set
@@ -48,7 +48,7 @@ set bdevq=set
 %bdevq%%grfxdh%pxesvvz%mbbzmk%%=exitcodeAscii%
 ```
 
-I started to manually replace the varables with the ASCII repersesntation.  For exmaple `%bdevq%` was equal to to a space.  So I did a find and replace accross all the code and updated it.  As I continued to work through this, I was able to get to code that looked like this:
+I started to manually replace the variables with the ASCII representation.  For example `%bdevq%` was equal to to a space.  So I did a find and replace across all the code and updated it.  As I continued to work through this, I was able to get to code that looked like this:
 ```bash
 set/abpquuu=4941956 %% 4941859
 cmd/cexit(4941956 %% 4941859)
@@ -79,7 +79,7 @@ and I see the similar results:
 
 All the results turned out to be `a-z0-9{}?:.=,_`
 
-I replaced all iterations of of the exit code with the repsected ASCII value and as I continued to manually deobfuscate the code, I started to assemble hints towards the flag, as seen in the code snippet below:
+I replaced all iterations of of the exit code with the represented ASCII value and as I continued to manually deobfuscate the code, I started to assemble hints towards the flag, as seen in the code snippet below:
 
 ```bash
 rem set bmvyrslfeccacqusqmfuwrwujksntppamchwahyvppzukumaairvsfewopezxzb=qylsgossatalvcqkwdctargrsonnpwggmlcnvtbzpdarq

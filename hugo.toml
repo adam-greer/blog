@@ -1,6 +1,6 @@
 baseURL = "https://blog.adamgreer.org/"
 theme = "hugo-ficurinia"
-title = "Adams Writeups and References"
+title = "Adams Write-ups and References"
 languageCode = "en"
 defaultContentLanguage = "en"
 relativeURLs = true
@@ -20,7 +20,7 @@ summaryLength = 70  # number of words for article summaries
         "hardLineBreak"
     ]
     author = "Adam"
-    description = "A blog for my writeups and references"  # this will be added as metadata
+    description = "A blog for my write-ups and references"  # this will be added as metadata
     posts = "posts"  # content directory where to find home page posts; default searches in "posts" and "post"
     showPostsLink = true  # show or hide the link to the simple post list
     extraContentDirs = []  # other content directories to render similarly to the home page
@@ -137,11 +137,6 @@ summaryLength = 70  # number of words for article summaries
         name = "About"
         url = "/about/"
         weight = 10
-    [[menu.main]]
-	identifier = "references"
-	name = "References"
-	url = "/references/"
-	wright = 20
     # these links (menu.icons) will be added as icon links below the main nav
     [[menu.icons]]
         identifier = "github"

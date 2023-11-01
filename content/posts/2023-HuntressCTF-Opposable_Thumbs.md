@@ -18,7 +18,7 @@ We uncovered a database. Perhaps the flag is right between your fingertips!
 
 ### Steps
 
-This challenge started with a file called ```thumbcache_256.db```.  I initally started with my Linux VM, but soon discovered this file is part of the windows operating system and I found an open source project that allows us to extact the thumbnail images from the database file.  You can find more on the windows program [here](https://thumbcacheviewer.github.io/).  I pivoted over to my Windows Flare VM and installed this application and loaded the .db file.
+This challenge started with a file called ```thumbcache_256.db```.  I initially started with my Linux VM, but soon discovered this file is part of the windows operating system and I found an open source project that allows us to extract the thumbnail images from the database file.  You can find more on the windows program [here](https://thumbcacheviewer.github.io/).  I pivoted over to my Windows Flare VM and installed this application and loaded the .db file.
 
 This db file has 22 objects present and I found I could use ```CTRL + A``` to select all objects and right click and use ```Save Selected ``` and saved them to a new folder called ThumbNails.
 

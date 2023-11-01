@@ -17,7 +17,7 @@ Welcome to our hackable M365 tenant! Can you find any juicy details, like perhap
 
 ### Steps
 
-Upon authenicating to the server, I noticed the ADDInternal suite of tools was being used.  I looked at the documenation for [AADInternals by DrAzureAD](https://aadinternals.com/aadinternals/#Get-AADIntCompanyInformation) and found a cmdlet for ```Get-AADIntCompanyInformation``` which had the flag.
+Upon authenticating to the server, I noticed the ADDInternal suite of tools was being used.  I looked at the documentation for [AADInternals by DrAzureAD](https://aadinternals.com/aadinternals/#Get-AADIntCompanyInformation) and found a cmdlet for ```Get-AADIntCompanyInformation``` which had the flag.
 Flag:  ```flag{dd7bf230fde8d4836917806aff6a6b27}```
 
 ![](/2023-HuntressCTF/m365geninfo.png)
@@ -35,7 +35,7 @@ This tenant looks to have some odd Conditional Access Policies. Can you find a w
 
 ### Steps
 
-Referencing the documenation again there was a cmdlet for ```Get-AADIntConditionalAccessPolicies``` which listed our the conditional access polilcy and the flag was in the displayName field.
+Referencing the documentation again there was a cmdlet for ```Get-AADIntConditionalAccessPolicies``` which listed our the conditional access policy and the flag was in the displayName field.
 Flag ```flag{d02fd5f79caa273ea535a526562fd5f7}```
 
 ![](/2023-HuntressCTF/m365ca.png)

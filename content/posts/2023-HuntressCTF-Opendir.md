@@ -19,7 +19,7 @@ NOTE: This showcases genuine malware samples found a real opendir. For domain re
 
 ### Steps
 
-After authenciating to the applicaiton, i'm presented with a direcotry listing of the web server.  I navigated to each of the files that were .cmd, .bat, .txt, etc.  After a few minutes of browsing I discovered ```http://chal.ctf.games:31439/sir/64_bit_new/oui.txt``` and about half way down the page, I disovered the flag. 
+After authenticating to the application, i'm presented with a directory listing of the web server.  I navigated to each of the files that were .cmd, .bat, .txt, etc.  After a few minutes of browsing I discovered ```http://chal.ctf.games:31439/sir/64_bit_new/oui.txt``` and about half way down the page, I discovered the flag. 
 
 ![](/2023-HuntressCTF/opendirflag.png)
 
