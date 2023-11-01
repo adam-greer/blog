@@ -143,7 +143,11 @@ summaryLength = 70  # number of words for article summaries
         name = "Github"
         url = "https://github.com/adam-greer"
         weight = 10
-
+    [[menu.icons]]
+    identifier = "twitter"
+    name = "X"
+    url = "https://twitter.com/adam_infosec"
+    weight = 11
 # this section is necessary if you want infinite scrolling
 # it allows to output the article list as paged JSON so that "pages" can be retrieved via javascript
 [outputs]
