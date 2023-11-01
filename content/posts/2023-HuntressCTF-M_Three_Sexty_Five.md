@@ -1,6 +1,6 @@
 ---
 title: 2023 HuntressCTF - M Three Sixty Five
-date: 2023-10-06T15:04:11-06:00
+date: 2023-11-01T07:00:00-07:00
 tags:
   - m365
   - powershell

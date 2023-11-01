@@ -1,6 +1,6 @@
 ---
 title: 2023 HuntressCTF - BaseFFFF+1
-date: 2023-10-06T15:04:11-06:00
+date: 2023-11-01T07:00:00-07:00
 tags:
   - base65536
 image: /2023-HuntressCTF/base.png
