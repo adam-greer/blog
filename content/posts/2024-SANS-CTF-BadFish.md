@@ -18,7 +18,7 @@ DISCLAIMER: Flag will start with the number of the challenge it belongs to.
 
 ```
 
-### Steps
+### Badfish 002
 
 I first started by mounting the img file.
 ```bash
@@ -29,10 +29,14 @@ Next, I started to enumerate the the files and discovered the second flag in /ho
 
 ![](/2024sansctf/badfish002.png)
 
+### Badfish 003
+
 Moving forward, I discovered the third flag ini the `/usr/bin/` directory as a suspected binary called `3_5tr1nGs_r_BaD_4_f15H`.
 
 
 ![](/2024sansctf/badfish003.png)
+
+### Badfish 004
 
 The last flag was setup as a cron job and stored in `/tmp/.d/daily.py`
 
