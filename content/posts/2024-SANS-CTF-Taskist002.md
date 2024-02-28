@@ -1,20 +1,32 @@
----
-title: 2024 SANS Offensive Operation CTF - In Between The Lines 001-002
+2---
+title: 2024 SANS Offensive Operation CTF - Taskist :: 002
 date: 2024-02-28T07:00:00-07:00
 tags:
-  - gif
-  - convert
+  - javascript
 image: 
 ---
 
+
 ### Summary
 ```
-Hey check out this awesome gif I found!
+Great, you were able to leak sensitive information of the admin account! But can you log in as the admin account now? Play around with other features available on the platform!
 ```
 
-### Steps
+### Taskist 002
 
-The gif file has one image that contains a flag, but as you see its quite difficult to see without modification. 
+While enumerating the application I found that you can change the userid when performing a password change. Using a proxy, I intercepted the password change request and changed it to the admin's userid of `64`, and we received the below responses.
 
-![](/2024sansctf/ibtl001.gif)
+![](/2024/sansctf/taskist002.png)
+
+Next, I logged into the application with the username and password of `admin:br0k3n_p4ss__c0ntr0l_l0gin` and obtained the flag.
+
+![](/2024/sansctf/taskist002-2.png)
+
+
+
+
+
+
+
+
 
