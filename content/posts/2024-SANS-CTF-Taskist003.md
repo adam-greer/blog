@@ -16,11 +16,11 @@ Wow! You compromised the admin account! Looks like there's some interesting info
 
 While logged into the application as an admin, I now had access to the site_configuration where we can import and export configuration setting.  I first exported the current site configuration and then re-imported it to understand the format that was required to import. After a few minutes, I discovered the `site_logo` is vulnerable to Server Side Request Forgery (SSRF) through the file schema. I was able to confirm this by obtaining the `/etc/passwd` file. 
 
-![](/2024/sansctf/taskist003.png)
+![](/2024sansctf/taskist003.png)
 
 Initially, this SSRF was limited to just local file reads so there was a fair amount of guess work involved trying to figure out the right file names.  Additionally, I was provided a clue that the app was still located in the `/app` directory. From the Admin's task list.  Eventually, I was able to locate `/app/index.js` which had the flag.
 
-![](/2024/sansctf/taskist003-2.png)
+![](/2024sansctf/taskist003-2.png)
 
 
 
