@@ -1,5 +1,5 @@
 ---
-title: 2024 SANS Offensive Operation CTF - Taskist :: 001
+title: 2024 SANS Offensive Operation CTF - Taskist 001
 date: 2024-02-28T07:00:00-07:00
 tags:
   - javascript
