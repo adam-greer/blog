@@ -50,7 +50,7 @@ Researching more about how Mozilla encrypts stored credentials, I discoverd a gr
 python firepwd.py -d /home/kali/huntress/dumpsterfire/home/challenge/.mozilla/firefox/bc1m1zlr.default-release/ 
 ```
 
-I observed the follwing response:
+I observed the following response:
 
 ```bash
 globalSalt: b'237366f42ee4865cb4fa8c6dedd52aad8a06d347'

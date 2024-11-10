@@ -20,7 +20,7 @@ This challenge gives us a C++ source code file. Looking at the file the variable
 Assembly smlpjtpFegEH = Assembly.Load(Convert.FromBase64String(zcfZIEShfvKnnsZ(pTIxJTjYJE, YKyumnAOcgLjvK)));
 ```
 
-This python script will perform the subsitition for me and create a valid base64 string.
+This python script will perform the substitution for me and create a valid base64 string.
 ```python
 def perform_substitution(t, k):
     bnugMUJGJayaT = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
