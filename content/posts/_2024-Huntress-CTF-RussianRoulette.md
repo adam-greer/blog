@@ -1,7 +1,7 @@
 ---
 title: 2024 HuntressCTF - Russian Roulette
 date: 2024-10-03T07:00:00-07:00
-tags:  - 
+tags:   
 image: /2024-HuntressCTF/rr.png
 ---
 
