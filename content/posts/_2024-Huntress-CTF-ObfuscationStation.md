@@ -3,7 +3,7 @@ title: 2024 HuntressCTF - Obfuscation Station
 date: 2024-10-13T07:00:00-07:00
 tags:
   - 
-image: /2024-HuntressCTF/ObfuscationStation.png
+image: /2024-HuntressCTF/obfuscationstation.png
 ---
 
 ### Summary

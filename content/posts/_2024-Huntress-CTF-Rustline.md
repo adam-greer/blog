@@ -3,7 +3,7 @@ title: 2024 HuntressCTF - Rustline
 date: 2024-10-22T07:00:00-07:00
 tags:
   - 
-image: /2024-HuntressCTF/Rustline.png
+image: /2024-HuntressCTF/rustline.png
 ---
 
 ### Summary
